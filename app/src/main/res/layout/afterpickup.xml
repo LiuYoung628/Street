@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_marginTop="70dp"
+        android:id="@+id/sd_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderWidth="2dp"
+        fresco:roundingBorderColor="#22292c"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textColor="#22292c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你们互相喜欢了对方"
+        android:layout_below="@+id/sd_avatar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:text="M"
+        android:textColor="#3cb4fa"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/bt_chat"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="打招呼"
+            android:textSize="14dp"
+            android:textColor="#22292c"
+            android:background="@drawable/buttonboder"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="22dp"
+        android:textColor="#22292c"
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/build"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_back" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_actions"/>
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_nopeople"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sd_noactions"
+                android:layout_width="150dp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                style="@style/blackTextView"
+                android:gravity="center"
+                android:text="@string/noactions"
+                />
+            <TextView
+                android:layout_marginTop="3dp"
+                style="@style/blackSmallTextView"
+                android:textColor="#cdcdcd"
+                android:gravity="center"
+                android:text="先去跟对方挥个手吧！\n(点击“查看资料”，即可向对方挥手或发起各种动作)"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

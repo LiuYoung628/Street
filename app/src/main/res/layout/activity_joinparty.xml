@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#1a1a1a"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:padding="6dp"
+                android:background="@drawable/back_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_white_48dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_toRightOf="@+id/ll_back"
+                android:layout_toLeftOf="@+id/bt_stuff"
+                android:id="@+id/tv_name"
+                android:text="Na"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="咨询工作人员"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                android:id="@+id/bt_stuff"
+                android:layout_marginRight="6dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/whiteboder"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="36dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/jvp_avatar"/>
+
+                <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/circleProgressBar"/>
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"/>
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_margin="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/relativeLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_partyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="party name"/>
+
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/tv_partyTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="party time"/>
+
+                    <LinearLayout
+
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_boyPrice"
+                            android:textColor="#1a1a1a"
+
+                            android:text="50"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_girlPrice"
+                            android:text="0"
+                            android:textColor="#1a1a1a"
+
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="女生"/>
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_girlNumber"
+                            android:text="共10席/余 3 席"/>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_girls"/>
+
+
+
+                        <RelativeLayout
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="男生"/>
+
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_boyNumber"
+                                android:text="共10席/余 8 席"/>
+
+                        </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_boys"/>
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1a1a1a"
+                        android:text="详情"/>
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/tv_partyDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="party description"/>
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+
+                        <com.tencent.tencentmap.mapsdk.map.MapView
+                            android:id="@+id/mapview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/tv_partyPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="party place"/>
+
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/tv_contactinformation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NA"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/bt_joinIn"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Join in!"
+        android:textColor="#fff"
+
+        android:background="@drawable/anniu3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

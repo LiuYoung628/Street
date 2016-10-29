@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            fresco:roundAsCircle="true"
+            android:id="@+id/sd_avatar"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/sd_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="3dp"
+                android:text="NA"
+                style="@style/blackTextView"
+                android:id="@+id/tv_name"/>
+
+            <TextView
+                android:layout_margin="3dp"
+                android:text="NA"
+                style="@style/blackTextView"
+                android:textColor="#cdcdcd"
+                android:id="@+id/tv_status"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_profilesetting"
+            android:id="@+id/imageView7"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="编辑个人档案"
+          android:textColor="#1a1a1a"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/imageView7"
+          android:layout_toEndOf="@+id/imageView7"
+          android:layout_marginLeft="22dp"
+          android:layout_marginStart="22dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hobby"
+        android:padding="12dp"
+        android:background="@drawable/selector"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hobby_profilesetting"
+            android:id="@+id/imageView8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加爱好"
+            android:textColor="#1a1a1a"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fourbest"
+        android:padding="12dp"
+        android:background="@drawable/selector"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera_black_mainactivity"
+            android:id="@+id/imageView9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传照片"
+            android:textColor="#1a1a1a"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView9"
+            android:layout_toEndOf="@+id/imageView9"/>
+    </RelativeLayout>
+
+    <!--<include-->
+        <!--layout="@layout/fragment_contact"/>-->
+
+</LinearLayout>

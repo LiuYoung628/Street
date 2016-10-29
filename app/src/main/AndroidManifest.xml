@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mypersonalfile.randian1">
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 基础模块 END -->
+
+    <application
+        android:name=".myApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon192"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- 实时通信模块、推送（若使用该功能，需添加以下声明）START -->
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="SEEBZ-HWTH5-5BZIC-QWI2R-WCK4V-DEBFB"/>
+
+        <service android:name="com.avos.avoscloud.PushService"/>
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <!-- 实时通信模块、推送 END -->
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:exported="true">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".StreetActivity.Startpage"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".StreetActivity.Chooseschool"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Registration.School"/>
+        <activity android:name=".Registration.AfterRegistration"/>
+        <activity android:name=".Registration.Verificationlogin"/>
+        <activity android:name=".Registration.Uploadavatar"/>
+        <activity android:name=".StreetActivity.Login"/>
+        <activity android:name=".StreetActivity.forgetpassword"/>
+        <activity android:name=".StreetActivity.finishforgetpassword"/>
+        <activity android:name=".StreetActivity.Questionnaire"/>
+        <activity android:name=".StreetActivity.Showitinfo"/>
+        <activity android:name=".StreetActivity.Setting"/>
+        <activity android:name=".StreetActivity.Orgnaization"/>
+        <activity android:name=".StreetActivity.FourBestPic"/>
+        <activity android:name=".StreetActivity.Editinfomation"/>
+        <activity android:name=".StreetActivity.Changepassword"/>
+        <activity android:name=".StreetActivity.Hometown"/>
+        <activity android:name=".StreetActivity.Hometown2"/>
+        <activity android:name=".StreetActivity.About"/>
+        <activity android:name=".StreetActivity.Motto"/>
+        <activity android:name=".StreetActivity.ChatActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".StreetActivity.BigImageView"/>
+        <activity android:name=".StreetActivity.AfterPickup"/>
+        <activity android:name=".Registration.Feedback"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".StreetActivity.AddBooks"/>
+        <activity android:name=".StreetActivity.AddGym"/>
+        <activity android:name=".StreetActivity.Hobby"/>
+        <activity android:name=".StreetActivity.Privacy"/>
+        <activity android:name=".StreetActivity.StopAccount"/>
+        <activity android:name=".StreetActivity.AddHobby"/>
+
+        <activity android:name=".StreetActivity.NewProfile"/>
+        <activity android:name=".StreetActivity.JoinParty"/>
+        <activity android:name=".Chat.MultiUserChatActivity"/>
+        <activity android:name=".StreetActivity.StoryPic"/>
+
+        <activity android:name=".StreetActivity.StoryComment"/>
+        <activity android:name=".StreetActivity.StoryManager"/>
+
+    </application>
+
+
+</manifest>

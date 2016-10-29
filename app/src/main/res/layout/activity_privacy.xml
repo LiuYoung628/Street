@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1a1a1a"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/tv_toolbarName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="隐私能见度"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_collegeprivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#22292c"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:text="学院"/>
+
+        <TextView
+            android:id="@+id/tv_collegeprivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="自己"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="?android:attr/listDivider"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_majorprivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#22292c"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:text="专业"/>
+
+        <TextView
+            android:id="@+id/tv_majorprivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="自己"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="?android:attr/listDivider"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_wechatprivacy"
+        android:background="@drawable/selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#22292c"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:text="微信号"/>
+
+        <TextView
+            android:id="@+id/tv_wechatprivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="自己"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="?android:attr/listDivider"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_chatPrivacy"
+        android:background="@drawable/selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#22292c"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:text="聊天"/>
+
+        <TextView
+            android:id="@+id/tv_chatPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="配对"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

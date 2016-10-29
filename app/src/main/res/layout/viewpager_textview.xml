@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        style="@style/blackTextView"
+        android:text="一杯咖啡认识你"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        style="@style/blackSmallTextView"
+        android:text="互相点击爱心，即可匹配成功\n在附近的咖啡厅获得免单咖啡\n走出宿舍，用一杯咖啡认识你"/>
+
+</LinearLayout>

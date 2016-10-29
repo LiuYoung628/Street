@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_margin="6dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:roundAsCircle="true"
+        android:id="@+id/sd_otherAvatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sd_otherAvatar"
+        android:id="@+id/tv_othermessage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/sd_avatar"
+        android:id="@+id/tv_mymessage"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        app:roundAsCircle="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/sd_avatar"/>
+
+</RelativeLayout>

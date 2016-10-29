@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/blackTextView"
+        android:textSize="10sp"
+        android:layout_margin="6dp"
+        android:text="如果双方都点击爱心，会弹出配对界面，配对界面有系统提示的约会详情。
+        \n聊天设有倒计时，过时会自动解除匹配。抓紧于对方聊天，约出来聊聊吧。
+        \nstreet会为你们推荐附近的星巴克/COSTA咖啡厅的地点以及约会时间，若双方赴约，请消费后联系street工作人员，street会为你们免单；若要更改约会时间或地点也可以与工作人员联系。"/>
+
+</LinearLayout>

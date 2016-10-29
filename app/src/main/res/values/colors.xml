@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a1a1a</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1a1a1a</color>
+    <color name="blue">#33b5e5</color>
+    <color name="clickgreen">#cfefe2</color>
+    <color name="grey">#cdcdcd</color>
+    <color name="white">#fff</color>
+    <color name="clickwhite">#f8f8f8</color>
+    <color name="storypurple">#924798</color>
+</resources>

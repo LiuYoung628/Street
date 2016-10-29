@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#1a1a1a">
+
+        <TextView
+            android:id="@+id/tv_toolbarName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="上传真实头像让更多人认识你"/>
+
+    </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:id="@+id/sd_avatar"
+            android:src="@drawable/ic_collections_black_48dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp" />
+
+    <TextView
+        style="@style/blackSmallTextView"
+        android:text="点击上图选择照片"
+        android:layout_below="@+id/sd_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:id="@+id/bt_finish"
+        android:background="@drawable/anniu3"
+        android:layout_centerHorizontal="true"/>
+
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/pb_next"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+
+
+</RelativeLayout>

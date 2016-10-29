@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我们会认真回复每一条反馈"
+        android:textColor="#1a1a1a"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        />
+
+    <EditText
+        android:gravity="left"
+        android:minLines="10"
+        android:textSize="14sp"
+        android:layout_margin="6dp"
+        android:background="@android:drawable/editbox_background"
+        android:id="@+id/et_content"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_margin="6dp"
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="留下你的手机号 / 微信 / QQ , 方便我们联系你"
+        android:layout_below="@+id/et_content"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_margin="6dp"
+        android:id="@+id/bt_post"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/blackboder"
+        android:text="发布"
+        android:layout_below="@+id/et_contact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

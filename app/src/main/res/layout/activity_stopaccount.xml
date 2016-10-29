@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#1a1a1a"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/tv_toolbarName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="停用账号"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:textColor="#1a1a1a"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停用账号后，你会在 Street 中彻底消失，直至复用账号，在此期间，也不能用该账号注册。"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停用账号的理由？"/>
+
+        <CheckBox
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不想被别人看到"
+            android:id="@+id/cb1" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件不好用"
+            android:id="@+id/cb2" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:id="@+id/cb3" />
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:minLines="4"
+            android:textSize="14sp"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_margin="6dp"
+            android:id="@+id/bt_post"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/blackboder"
+            android:text="提交"
+            android:layout_below="@+id/et_contact"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

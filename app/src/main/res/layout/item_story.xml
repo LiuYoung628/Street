@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/sd_avatar"
+        fresco:roundAsCircle="true"
+        android:layout_margin="3dp"/>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sd_avatar"
+        android:layout_margin="3dp"
+        android:layout_toEndOf="@+id/sd_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/blackTextView"
+            android:text="NA"
+            android:id="@+id/tv_name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/blackSmallTextView"
+                android:text="NA"
+                android:textColor="#cdcdcd"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_content"-->
+                <!--style="@style/blackSmallTextView"-->
+                <!--android:text=": NA"-->
+                <!--android:textColor="#cdcdcd"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_reaction0"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reaction0"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center"
+                    style="@style/blackSmallTextView"
+                    android:text="0"
+                    android:textColor="@color/storypurple"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pill"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reaction1"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reaction1"
+                    android:layout_gravity="center"
+                    style="@style/blackSmallTextView"
+                    android:text="0"
+                    android:textColor="@color/storypurple"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reaction2"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reaction2"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center"
+                    style="@style/blackSmallTextView"
+                    android:text="0"
+                    android:textColor="@color/storypurple"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moon"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_reaction3"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reaction3"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center"
+                    style="@style/blackSmallTextView"
+                    android:text="0"
+                    android:textColor="@color/storypurple"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wow"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_reaction4"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reaction4"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center"
+                    style="@style/blackSmallTextView"
+                    android:text="0"
+                    android:textColor="@color/storypurple"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/haha"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_reaction5"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reaction5"
+                    android:layout_margin="2dp"
+                    android:layout_gravity="center"
+                    style="@style/blackSmallTextView"
+                    android:text="0"
+                    android:textColor="@color/storypurple"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hundred"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commentNumber"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:layout_toLeftOf="@+id/ll_storysetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/storypurple"
+        android:text="NA"/>
+
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_selector"
+        android:id="@+id/ll_storysetting"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_grey600_36dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

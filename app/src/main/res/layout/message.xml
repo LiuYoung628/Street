@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sendtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11:11:11"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <LinearLayout
+            android:id="@+id/othermessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/otheravatar"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                fresco:placeholderImage="@drawable/ic_account_circle_black_48dp"
+                fresco:roundAsCircle="true"/>
+
+            <TextView
+                android:background="@drawable/chat_left_item_bg"
+                android:id="@+id/othermessagecontent"
+                android:layout_width="wrap_content"
+                android:maxWidth="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_gravity="bottom"
+                android:padding="12dp"
+                android:layout_marginLeft="2dp"
+                android:text="wo"
+                android:textColor="#1a1a1a"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/othersendimage"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/chat_left_item_bg"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+        //发送设置
+        <LinearLayout
+            android:id="@+id/mymessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignTop="@+id/othermessage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/mymessagecontent"
+                android:background="@drawable/chat_right_item_bg"
+                android:layout_width="wrap_content"
+                android:maxWidth="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:padding="10dp"
+                android:gravity="center|left"
+                android:layout_marginRight="2dp"
+                android:text="你"
+                android:textColor="#fff"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mysendImage"
+                android:visibility="gone"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/chat_right_item_bg"
+                fresco:actualImageScaleType="focusCrop"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/myavatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                fresco:placeholderImage="@drawable/ic_account_circle_black_48dp"
+                fresco:roundAsCircle="true"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

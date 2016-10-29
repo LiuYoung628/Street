@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_margin="3dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/sd_avatar"
+        fresco:roundAsCircle="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sd_avatar"
+        android:layout_toEndOf="@+id/sd_avatar">
+
+        <TextView
+            style="@style/blackTextView"
+            android:id="@+id/tv_name"
+            android:text="NA"/>
+
+        <TextView
+            style="@style/blackSmallTextView"
+            android:id="@+id/tv_content"
+            android:text="NA"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NA"
+        android:id="@+id/tv_time"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1a1a1a"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/tv_toolbarName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        fresco:actualImageScaleType="fitCenter"
+        android:id="@+id/sd_schoolPic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#22292c"
+        android:text="为了保证社交的质量，请验证你的身份"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@android:drawable/editbox_background"
+        android:id="@+id/et_username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:inputType="textPassword"
+        android:background="@android:drawable/editbox_background"
+        android:id="@+id/et_password"/>
+
+    <LinearLayout
+        android:id="@+id/ll_vertificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:hint="验证码"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/et_vertificationCode"/>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="40dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/et_vertificationCodePic"/>
+
+            <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="3dp"
+        android:textColor="#fff"
+        android:background="@drawable/anniu2"
+        android:id="@+id/bt_logIn"/>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+    <TextView
+        android:layout_margin="6dp"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="账号和密码仅用于实名认证。"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_margin="6dp"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="我们绝不会于任何人分享。"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:visibility="visible"
+        android:id="@+id/back"/>
+
+
+    <TextView
+        android:padding="6dp"
+        android:layout_gravity="center"
+        android:textColor="#1a1a1a"
+        android:id="@+id/tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blackboder"
+        android:text="意见反馈"/>
+
+
+
+
+</LinearLayout>

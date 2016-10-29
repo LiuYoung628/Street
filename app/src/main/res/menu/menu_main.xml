@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mypersonalfile.randian1.MainActivity">
+    <item
+        android:id="@+id/action_infor"
+        android:title="查看个人档案"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_fold"
+        android:title="折叠对话"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

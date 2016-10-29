@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1a1a1a"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/tv_toolbarName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="登录"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_telnumber"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="12dp"
+        android:background="@drawable/blackboder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/blackphone"/>
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/edit_telnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号码"
+            android:inputType="phone|number"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll_telnumber"
+        android:layout_margin="12dp"
+        android:id="@+id/ll_password"
+        android:background="@drawable/blackboder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/blackpassword"/>
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_password"
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resetpassword"
+        android:gravity="top"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#1a1a1a"/>
+
+
+
+    <Button
+        android:layout_below="@+id/forgetpassword"
+        android:id="@+id/loginin"
+        android:layout_margin="12dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="@drawable/blackboder"/>
+
+
+    <ImageView
+        android:layout_below="@+id/loginin"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/login"/>
+
+
+</RelativeLayout>

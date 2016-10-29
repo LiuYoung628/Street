@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1a1a1a"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/tv_toolbarName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="验证手机号"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="已发送验证码到此号码上 :"
+        android:textColor="#22292c"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="+86"
+            android:id="@+id/tv_telnumber"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/bt_changeNumber"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="42dp"
+            android:background="@drawable/blackboder"
+            android:text="号码错了?"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="验证码"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/editText"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="重新发送"
+            android:background="@drawable/blackboder"
+            android:id="@+id/button2"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:text="下一步"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/button3"
+        android:background="@drawable/anniu2"
+        android:layout_centerHorizontal="true"/>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+</LinearLayout>

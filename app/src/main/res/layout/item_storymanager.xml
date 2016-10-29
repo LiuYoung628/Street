@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_margin="3dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/sd_avatar"
+        fresco:roundAsCircle="true"/>
+
+    <EditText
+        android:layout_margin="3dp"
+        android:background="@null"
+        android:hint="介绍..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_storydescription"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sd_avatar"
+        android:layout_toEndOf="@+id/sd_avatar"
+        android:layout_toLeftOf="@+id/ll_delete"/>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_selector"
+        >
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_delete_black_24dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

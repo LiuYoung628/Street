@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.mypersonalfile.randian1.MainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#1a1a1a">
+
+            <RelativeLayout
+                android:paddingRight="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/rl_story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:visibility="gone"
+                    android:background="@drawable/back_selector">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_photo_camera_white_18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_action"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@drawable/back_selector">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_main_actions"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="配对"
+                    android:id="@+id/tv_fragmentName"/>
+
+                <Button
+                    android:layout_centerVertical="true"
+                    android:layout_width="72dp"
+                    android:layout_height="27dp"
+                    android:text="吐槽我们"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:id="@+id/bt_kuso"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/whiteboder"/>
+
+
+                <LinearLayout
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:visibility="gone"
+                    android:background="@drawable/back_selector">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_close_white_48dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/iv_setting"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@drawable/back_selector">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_settings_white_48dp"/>
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/ll_poststory"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:background="@drawable/back_selector">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="24dp"-->
+                        <!--android:layout_height="24dp"-->
+                        <!--android:src="@drawable/ic_photo_camera_white_24dp"/>-->
+
+                <!--</LinearLayout>-->
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/numberProgerssBar"/>
+
+    <FrameLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout6"></FrameLayout>
+
+    <View
+        android:layout_above="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd"/>
+
+    <LinearLayout
+        android:padding="3dp"
+        android:gravity="center"
+        android:background="#fafafa"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout6">
+
+        <LinearLayout
+            android:background="@drawable/tabbarclick"
+            android:id="@+id/ll_story"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_camera_black_mainactivity"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_actions"
+            android:background="@drawable/tabbarclick"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_actions"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/ic_party"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/tabbarclick"
+            android:id="@+id/ll_pickup"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pickup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/whiteface"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contact"
+            android:background="@drawable/tabbarclick"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_chatlist"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/whitemessage"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:background="@drawable/tabbarclick"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/whiteperson"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

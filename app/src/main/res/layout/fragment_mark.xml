@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fde442"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_faceboard"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout5">
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="320dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_gravity="center"
+                android:id="@+id/sd_currentAvatar"
+                android:layout_width="320dp"
+                android:layout_height="320dp"/>
+
+            <com.daimajia.numberprogressbar.NumberProgressBar
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberProgerssBar"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_lastInfor"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/sd_lastAvatar"/>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textSize="10sp"
+                    android:textColor="#323232"
+                    android:id="@+id/tv_lastName"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="8sp"
+                        android:textColor="#323232"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_markpoint"
+                        android:text="NA"
+                        />
+
+                    <TextView
+                        android:textSize="8sp"
+                        android:textColor="#323232"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 分/ "
+                        />
+
+                    <TextView
+                        android:textSize="8sp"
+                        android:textColor="#41ca44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_averagePoint"
+                        android:text="NA"
+                        />
+
+                    <TextView
+                        android:textSize="8sp"
+                        android:textColor="#41ca44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 分"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="8sp"
+                        android:textColor="#b4b4b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_numberOfScore"
+                        android:text="NA"
+                        />
+
+                    <TextView
+                        android:textSize="8sp"
+                        android:textColor="#b4b4b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 人打分"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:textColor="#323232"
+                    android:id="@+id/tv_currentName"/>
+
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:textColor="#b4b4b4"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SchoolName"
+                    android:id="@+id/tv_currentSchoolName"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textColor="#fafafa"
+        android:textSize="24sp"
+        android:text="左右滑动为她打分"/>
+
+</LinearLayout>

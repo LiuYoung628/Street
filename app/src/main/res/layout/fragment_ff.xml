@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_ff"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="#e6e6e6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout3">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:layout_toLeftOf="@+id/bt_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赶紧扩大自己的社交势力吧！ 邀请自己的微信好友入驻 Street"/>
+
+            <Button
+                android:id="@+id/bt_invite"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="邀请微信好友"
+                android:textColor="#fff"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:background="@drawable/greenanniu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/blackSmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Street 已为你推荐 "/>
+
+                <TextView
+                    android:id="@+id/tv_mfn"
+                    style="@style/blackSmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NA"/>
+
+                <TextView
+                    style="@style/blackSmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 名朋友的朋友，通过 "/>
+
+                <TextView
+                    android:id="@+id/tv_fn"
+                    style="@style/blackSmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NA"/>
+
+                <TextView
+                    style="@style/blackSmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 名手机好友"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/blackSmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐数量在 Street 排名第 "/>
+
+                <TextView
+                    style="@style/blackSmallTextView"
+                    android:id="@+id/tv_ranking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NA"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_ff"
+            android:layout_below="@+id/linearLayout" />
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_ffTip"
+        android:layout_centerInParent="true"
+        android:padding="48dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/blackTextView"
+            android:text="什么是“朋友的朋友”功能？"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            style="@style/blackSmallTextView"
+            android:text="朋友的朋友功能指的是通过获取您手机通讯录向您推荐朋友的通讯录好友，您可以直接查看该用户的资料并搭讪TA。有了这个功能，您会发现，世界真的很小。"/>
+
+        <TextView
+            android:layout_marginTop="24dp"
+            style="@style/blackTextView"
+            android:text="怎么查看我“朋友的朋友”"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            style="@style/blackSmallTextView"
+            android:text="Street需要访问用户的手机通讯录，来对用户进行关系链的搭建，从而实现此功能。所以您只需点击下方按钮，允许获取访问即可。"></TextView>
+
+        <Button
+            android:id="@+id/bt_ffTip"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:textSize="12sp"
+            android:background="@drawable/anniu3"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:text="建立我的社交关系链"/>
+    </LinearLayout>
+
+</RelativeLayout>
